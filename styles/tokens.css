@@ -1,0 +1,36 @@
+/* PALCO — design tokens. ÚNICA fonte de verdade visual: seções consomem
+   apenas estas variáveis, nunca valores crus. Trocar a marca = editar este arquivo.
+   Identidade: teatral editorial de luxo — preto de cena, off-white de programa
+   de teatro, vermelho de cortina. Georgia em toda a tipografia (fonte de sistema). */
+
+:root{
+  /* Paleta 80/20 — preto/off-white dominantes, vermelho como acento */
+  --bg-0:#141414;            /* preto de cena — base da página (tom do hero) */
+  --bg-1:#141414;            /* mesmo preto do hero — pretos padronizados */
+  --bg-2:#231b1c;            /* painel/plate sobre escuro, tingido de vinho */
+  --bg-deep:#0f0f0f;         /* breu de coxia — mais fundo que o preto de cena */
+  --accent-glow:rgba(122,18,32,.38);  /* brilho de holofote vermelho */
+  --paper-0:#FAF7F4;         /* off-white principal (texto sobre escuro / bg claro) */
+  --paper-1:#F2EDE7;         /* off-white alternativo */
+  --ink:#1A1A1A;             /* escuro principal (texto sobre claro) */
+  --ink-1:#5b5350;           /* escuro suave */
+  --accent:#7A1220;          /* vermelho Palco — destaque de textos e detalhes */
+  --accent-d:#5C0D19;        /* vermelho profundo — hover/camadas */
+
+  /* Linhas e véus */
+  --rule:rgba(26,26,26,.16);
+  --rule-2:rgba(26,26,26,.38);
+  --rule-l:rgba(250,247,244,.14);
+  --rule-l2:rgba(250,247,244,.3);
+  --cream-1:rgba(250,247,244,.68);  /* texto suave sobre escuro */
+  --cream-2:rgba(250,247,244,.42);  /* texto apagado sobre escuro */
+
+  /* Tipografia — Georgia display/body (sistema; itálico como voz de ênfase) */
+  --font-display:Georgia, 'Times New Roman', serif;
+  --font-body:Georgia, 'Times New Roman', serif;
+
+  /* Ritmo e chrome */
+  --gx:clamp(1.1rem, 3.5vw, 3.5rem);        /* gutter horizontal global */
+  --nav-h:clamp(4.6rem, 8.5vh, 6.2rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
