@@ -119,10 +119,14 @@
 .aplicacao__bg img{ width:100%; height:100%; object-fit:cover; opacity:.55; }
 .aplicacao__bg::after{ content:""; position:absolute; inset:0; background:rgba(20,20,20,.72); }
 .aplicacao__c{ position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; text-align:center; gap:1.2rem; }
+.aplicacao .mono{ background:var(--accent); color:var(--paper-0); padding:.6em 1.1em .55em; }
 .aplicacao__h{ max-width:22ch; margin:0 auto; }
 .aplicacao__txt{ margin:0; max-width:56ch; color:var(--cream-1); font-size:clamp(1.02rem,.94rem + .4vw,1.3rem); }
-.aplicacao__btn{ margin-top:clamp(1.2rem,3vh,2rem); padding:1.2em 2.4em; }
+.aplicacao__btn{ margin-top:clamp(1.2rem,3vh,2rem); padding:1.4em 3em; font-size:.92rem; letter-spacing:.2em;
+  box-shadow:0 0 0 1px var(--accent), 0 14px 50px var(--accent-glow); }
+.aplicacao__btn:hover{ transform:translateY(-2px); box-shadow:0 0 0 1px var(--accent-d), 0 18px 60px var(--accent-glow); transition:transform .3s var(--ease), box-shadow .3s var(--ease); }
 .aplicacao__aviso{ color:var(--cream-2); margin:.6rem 0 0; }
+@media (max-width:640px){ .aplicacao__btn{ width:100%; max-width:24rem; justify-content:center; } }
 
 /* ── 6 · FAQ — claro, última seção ────────────────── */
 .faq__list{ max-width:56rem; }
