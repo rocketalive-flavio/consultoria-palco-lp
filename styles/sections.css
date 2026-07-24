@@ -100,10 +100,10 @@
 
 /* ── 4 · MENTORA — claro, retrato em moldura ──────── */
 .mentora__grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(2.2rem,6vw,6rem); align-items:center; }
-.mentora__foto{ margin:0; aspect-ratio:1365/2048; max-width:26rem; overflow:hidden;
+.mentora__foto{ margin:0; aspect-ratio:1365/1720; max-width:26rem; overflow:hidden;
   -webkit-mask-image:radial-gradient(ellipse 82% 86% at 50% 48%, #000 52%, transparent 98%);
   mask-image:radial-gradient(ellipse 82% 86% at 50% 48%, #000 52%, transparent 98%); }
-.mentora__foto img{ filter:grayscale(1) contrast(1.05); }
+.mentora__foto img{ filter:grayscale(1) contrast(1.05); object-position:50% 82%; }
 .mentora__body .sec__h{ margin:.15em 0 .3em; }
 .mentora__body > p{ margin:.5em 0; max-width:52ch; color:var(--ink-1); font-size:clamp(1.02rem,.94rem + .4vw,1.25rem); }
 .mentora__stats{ display:grid; grid-template-columns:repeat(3,auto); gap:clamp(1.4rem,3.5vw,3.5rem); justify-content:start; margin:clamp(1.8rem,4vh,2.8rem) 0 0; padding-top:1.4rem; border-top:1px solid var(--rule); }
@@ -157,6 +157,17 @@ body.modal-on{ overflow:hidden; }
 .modal__send:disabled{ opacity:.6; cursor:default; }
 .modal__ok{ margin-top:1rem; cursor:pointer; }
 @media (max-width:640px){ .modal__form{ grid-template-columns:1fr; } }
+
+/* ── MOBILE — headlines centralizadas ─────────────── */
+@media (max-width:760px){
+  .hero__left{ align-items:center; text-align:center; margin-inline:auto; }
+  .sec__head{ text-align:center; }
+  .sec__head .sec__h{ margin-inline:auto; }
+  .promessa__h{ text-align:center; margin-inline:auto; }
+  .mentora__body > .mono{ display:block; text-align:center; }
+  .mentora__body .sec__h{ text-align:center; margin-inline:auto; }
+  .mentora__foto{ margin-inline:auto; }
+}
 
 /* ── FOOTER ───────────────────────────────────────── */
 .ft{ display:flex; justify-content:space-between; align-items:center; gap:1rem; padding-top:clamp(1.6rem,4vh,2.5rem); padding-bottom:clamp(1.6rem,4vh,2.5rem); background:var(--bg-1); color:var(--paper-0); }
