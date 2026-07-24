@@ -11,6 +11,13 @@
 .sec--light .mono{ color:var(--ink-1); }
 .sec--light .sec__h em{ color:var(--accent); }
 
+/* Ênfase de título sobre fundo escuro: o vermelho não tem contraste no preto —
+   itálico off-white com sublinhado vermelho garante o destaque. */
+.hero__statement em, .cena .sec__h em, .metodo .sec__h em, .aplicacao .sec__h em{
+  color:var(--paper-0); font-style:italic;
+  text-decoration:underline; text-decoration-color:var(--accent);
+  text-decoration-thickness:.07em; text-underline-offset:.14em; }
+
 /* ── 1 · PROMESSA — hero escuro, 2 colunas ────────── */
 .hero{ position:relative; min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding:clamp(4rem,10vh,6rem) var(--gx) clamp(1.6rem,4vh,2.6rem); overflow:clip; background:var(--bg-1); }
 .hero__foto{ position:absolute; top:0; right:0; bottom:0; z-index:0; margin:0; width:min(48vw,42rem); overflow:hidden; will-change:filter; }
@@ -85,9 +92,10 @@
 .metodo__body p{ margin:0; max-width:44ch; color:var(--cream-1); font-size:clamp(1rem,.92rem + .4vw,1.2rem); }
 @media (max-width:760px){
   .metodo__rows{ grid-template-columns:1fr; }
-  .metodo__row{ padding:clamp(1.6rem,5vw,2.4rem) 0; }
+  .metodo__row{ display:grid; grid-template-columns:auto 1fr; column-gap:1rem; align-items:baseline; padding:clamp(1.6rem,5vw,2.4rem) 0; }
   .metodo__row:nth-child(odd){ border-right:none; }
   .metodo__row:not(:last-child){ border-bottom:1px solid var(--rule-l); }
+  .metodo__n{ font-size:clamp(2rem,8vw,2.6rem); margin-bottom:0; }
 }
 
 /* ── 4 · MENTORA — claro, retrato em moldura ──────── */
