@@ -94,12 +94,14 @@
 .metodo__body p{ margin:0; max-width:44ch; color:var(--cream-1); font-size:clamp(1rem,.92rem + .4vw,1.2rem); }
 @media (max-width:760px){
   .metodo__rows{ grid-template-columns:1fr; }
-  .metodo__row{ display:grid; grid-template-columns:auto auto; justify-content:center; column-gap:1rem; align-items:baseline; padding:clamp(1.6rem,5vw,2.4rem) 0; }
+  .metodo__row{ display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; column-gap:.45em; padding:clamp(1.6rem,5vw,2.4rem) 0; text-align:center; }
   .metodo__row:nth-child(odd){ border-right:none; }
   .metodo__row:not(:last-child){ border-bottom:1px solid var(--rule-l); }
-  .metodo__n{ font-size:clamp(2rem,8vw,2.6rem); margin-bottom:0; }
-  .metodo__body{ display:contents; }
-  .metodo__body p{ grid-column:1 / -1; text-align:center; margin:.7rem auto 0; }
+  .metodo__n{ font-size:clamp(1.6rem,6.5vw,2.1rem); margin-bottom:0; }
+  .metodo__n::after{ content:" —"; }
+  .metodo__body,.metodo__body h3{ display:contents; }
+  .metodo__body h3 em{ flex-basis:100%; margin-top:.3em; }
+  .metodo__body p{ flex-basis:100%; margin:.7rem auto 0; }
 }
 
 /* ── 4 · MENTORA — claro, retrato em moldura ──────── */
