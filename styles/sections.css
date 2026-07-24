@@ -98,7 +98,6 @@
   .metodo__row:nth-child(odd){ border-right:none; }
   .metodo__row:not(:last-child){ border-bottom:1px solid var(--rule-l); }
   .metodo__n{ font-size:clamp(1.6rem,6.5vw,2.1rem); margin-bottom:0; }
-  .metodo__n::after{ content:" —"; }
   .metodo__body,.metodo__body h3{ display:contents; }
   .metodo__body h3 em{ flex-basis:100%; margin-top:.3em; }
   .metodo__body p{ flex-basis:100%; margin:.7rem auto 0; }
