@@ -57,6 +57,7 @@
 .promessa__txt{ margin:0; font-family:var(--font-body); font-size:clamp(1.05rem,.96rem + .5vw,1.4rem); line-height:1.6; max-width:56ch; color:rgba(250,247,244,.92); }
 .promessa__txt--b{ margin-top:clamp(1.2rem,3vh,1.8rem); font-family:var(--font-body); font-size:clamp(1.02rem,.94rem + .4vw,1.3rem); line-height:1.6; max-width:62ch; color:rgba(250,247,244,.82); }
 @media (max-width:900px){ .promessa__c{ margin-left:0; } .promessa__foto{ display:none; } }
+@media (max-width:760px){ .promessa{ padding-top:clamp(3.2rem,7vh,4.5rem); padding-bottom:clamp(3.2rem,7vh,4.5rem); } }
 
 /* ── 2 · PARA QUEM É / NÃO É — claro ──────────────── */
 .quem{ position:relative; overflow:clip; }
