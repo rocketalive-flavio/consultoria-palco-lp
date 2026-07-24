@@ -10,13 +10,13 @@ import { preloader } from './sections/preloader.js';
 import { heroIntro } from './sections/hero.js';
 import { spotlight } from './sections/spotlight.js';
 import { metodoSeq } from './sections/metodo.js';
-import { aplicacaoModal } from './sections/modal.js';
+import { ctaTracking } from './sections/cta.js';
 
 function boot() {
   initLenis();
   cursor();
   magnetic();
-  aplicacaoModal();
+  ctaTracking();
   preloader().then(async () => {
     spotlight();
     heroIntro();

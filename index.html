@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#141414" />
   <link rel="stylesheet" href="styles/tokens.css?v=4" />
   <link rel="stylesheet" href="styles/base.css?v=3" />
-  <link rel="stylesheet" href="styles/sections.css?v=35" />
+  <link rel="stylesheet" href="styles/sections.css?v=36" />
   <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
   <!-- Meta Pixel — TODO: preencher o ID do pixel da Bea para ativar -->
   <script>
@@ -53,7 +53,7 @@
             <span class="hero__statement" data-hero-line>Transforme sua competência</span>
             <span class="hero__statement" data-hero-line>como advogada em uma <em>autoridade</em> que o mercado percebe, valoriza e procura.</span>
           </h1>
-          <a class="btn btn--accent hero__cta" href="#aplicacao" data-hero-line data-mag data-open-modal>Faça sua aplicação</a>
+          <a class="btn btn--accent hero__cta" href="https://docs.google.com/forms/d/e/1FAIpQLScJbuNpnGtdR_P9ck0cB_B2pMunrzb_Oi88BpZOWIMWGdNmfw/viewform" target="_blank" rel="noopener" data-hero-line data-mag data-cta>Faça sua aplicação</a>
         </div>
       </div>
     </header>
@@ -170,7 +170,7 @@
         <h2 class="sec__h aplicacao__h" data-words>O próximo passo para ser reconhecida como <em>referência</em> na sua área.</h2>
         <p class="aplicacao__txt" data-fade>Se você já tem competência técnica, mas sente que sua advocacia ainda não é percebida na mesma proporção, a Consultoria Palco foi feita para você.</p>
         <p class="aplicacao__txt" data-fade>Durante quatro meses, estruturamos o seu posicionamento para que o mercado reconheça seu valor, fortaleça sua autoridade e escolha você pelas oportunidades certas.</p>
-        <a class="btn btn--accent aplicacao__btn" href="#aplicacao" data-fade data-mag data-open-modal>Faça sua aplicação</a>
+        <a class="btn btn--accent aplicacao__btn" href="https://docs.google.com/forms/d/e/1FAIpQLScJbuNpnGtdR_P9ck0cB_B2pMunrzb_Oi88BpZOWIMWGdNmfw/viewform" target="_blank" rel="noopener" data-fade data-mag data-cta>Faça sua aplicação</a>
         <p class="mono aplicacao__aviso" data-fade>Vagas por seleção. Toda aplicação passa por uma análise de perfil antes do aceite.</p>
       </div>
     </section>
@@ -203,61 +203,7 @@
     <span class="mono ft__tag">Ocupe seu espaço</span>
   </footer>
 
-  <!-- Modal de aplicação — 2 passos: dados → confirmação -->
-  <div class="modal" data-modal hidden role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
-    <div class="modal__box">
-      <button class="modal__x" type="button" data-modal-close aria-label="Fechar">×</button>
-      <div data-step="1">
-        <span class="mono modal__tag">Aplicação · Consultoria Palco</span>
-        <h3 class="modal__h" id="modal-titulo">Faça sua aplicação</h3>
-        <p class="modal__sub">Vagas por seleção. Toda aplicação passa por uma análise de perfil antes do aceite.</p>
-        <form class="modal__form" data-modal-form>
-          <label>Nome completo
-            <input type="text" name="nome" required autocomplete="name" /></label>
-          <label>E-mail
-            <input type="email" name="email" required autocomplete="email" /></label>
-          <label>WhatsApp (com DDD)
-            <input type="tel" name="whatsapp" required autocomplete="tel" placeholder="(00) 00000-0000" /></label>
-          <label>Instagram
-            <input type="text" name="instagram" placeholder="@seuperfil" /></label>
-          <label>Área de atuação
-            <input type="text" name="area" required placeholder="Ex.: contratos, tributário, família…" /></label>
-          <label>Tempo de advocacia
-            <select name="tempo" required>
-              <option value="" selected disabled>Selecione</option>
-              <option>Até 2 anos</option>
-              <option>2 a 5 anos</option>
-              <option>5 a 10 anos</option>
-              <option>Mais de 10 anos</option>
-            </select></label>
-          <label>Faturamento mensal médio
-            <select name="faturamento" required>
-              <option value="" selected disabled>Selecione</option>
-              <option>Até R$ 5 mil</option>
-              <option>R$ 5 a 10 mil</option>
-              <option>R$ 10 a 20 mil</option>
-              <option>Acima de R$ 20 mil</option>
-            </select></label>
-          <label>Sobre o investimento (R$ 6.000 à vista ou R$ 7.500 em até 4x)
-            <select name="investimento" required>
-              <option value="" selected disabled>Selecione</option>
-              <option>Estou pronta para investir</option>
-              <option>Quero entender as condições na conversa</option>
-            </select></label>
-          <label class="modal__full">Por que a Palco faz sentido para você agora?
-            <textarea name="motivo" rows="3"></textarea></label>
-          <button class="btn btn--accent modal__send" type="submit" data-send>Enviar aplicação</button>
-        </form>
-      </div>
-      <div data-step="2" hidden>
-        <span class="mono modal__tag">Aplicação recebida</span>
-        <h3 class="modal__h">Sua aplicação está em análise.</h3>
-        <p class="modal__sub">Toda aplicação passa por uma análise de perfil antes do aceite. Em breve entraremos em contato pelo WhatsApp informado.</p>
-        <button class="btn modal__ok" type="button" data-modal-close>Fechar</button>
-      </div>
-    </div>
-  </div>
 
-  <script type="module" src="src/main.js?v=6"></script>
+  <script type="module" src="src/main.js?v=7"></script>
 </body>
 </html>
