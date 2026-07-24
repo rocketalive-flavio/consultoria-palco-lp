@@ -97,7 +97,8 @@
   .metodo__row{ display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; column-gap:.45em; padding:clamp(1.6rem,5vw,2.4rem) 0; text-align:center; }
   .metodo__row:nth-child(odd){ border-right:none; }
   .metodo__row:not(:last-child){ border-bottom:1px solid var(--rule-l); }
-  .metodo__n{ font-size:clamp(1.6rem,6.5vw,2.1rem); margin-bottom:0; }
+  .metodo__n{ font-size:clamp(2.2rem,9vw,3rem); margin-bottom:0; }
+  .metodo__body h3{ font-size:clamp(2.2rem,9vw,3rem); }
   .metodo__body,.metodo__body h3{ display:contents; }
   .metodo__body h3 em{ flex-basis:100%; margin-top:.3em; }
   .metodo__body p{ flex-basis:100%; margin:.7rem auto 0; }
