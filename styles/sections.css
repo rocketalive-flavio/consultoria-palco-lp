@@ -37,7 +37,7 @@
 @media (max-width:860px){
   .hero{ padding-top:clamp(3rem,8vh,4rem); }
   .hero__foto{ width:100%; }
-  .hero__foto img{ opacity:.3; }
+  .hero__foto img{ opacity:.3; object-position:50% 82%; }
   .hero__foto::before{ background:linear-gradient(to left, transparent 40%, var(--bg-1) 100%); }
 }
 
@@ -92,10 +92,12 @@
 .metodo__body p{ margin:0; max-width:44ch; color:var(--cream-1); font-size:clamp(1rem,.92rem + .4vw,1.2rem); }
 @media (max-width:760px){
   .metodo__rows{ grid-template-columns:1fr; }
-  .metodo__row{ display:grid; grid-template-columns:auto 1fr; column-gap:1rem; align-items:baseline; padding:clamp(1.6rem,5vw,2.4rem) 0; }
+  .metodo__row{ display:grid; grid-template-columns:auto auto; justify-content:center; column-gap:1rem; align-items:baseline; padding:clamp(1.6rem,5vw,2.4rem) 0; }
   .metodo__row:nth-child(odd){ border-right:none; }
   .metodo__row:not(:last-child){ border-bottom:1px solid var(--rule-l); }
   .metodo__n{ font-size:clamp(2rem,8vw,2.6rem); margin-bottom:0; }
+  .metodo__body{ display:contents; }
+  .metodo__body p{ grid-column:1 / -1; text-align:center; margin:.7rem auto 0; }
 }
 
 /* ── 4 · MENTORA — claro, retrato em moldura ──────── */
@@ -138,8 +140,26 @@
 .faq__item summary:hover{ color:var(--accent); }
 .faq__item p{ margin:0; padding:0 0 clamp(1.2rem,3vh,1.8rem); max-width:60ch; color:var(--ink-1); font-size:clamp(1rem,.92rem + .4vw,1.2rem); line-height:1.6; }
 
+/* ── MOBILE — tudo centralizado (headlines, textos, botões) ── */
+@media (max-width:760px){
+  .hero__left{ align-items:center; text-align:center; margin-inline:auto; }
+  .hero__logo{ justify-content:center; }
+  .sec__head{ text-align:center; }
+  .sec__head .sec__h{ margin-inline:auto; }
+  .cena__txt{ text-align:center; margin-inline:auto; }
+  .promessa__c{ text-align:center; }
+  .promessa__h,.promessa__txt{ margin-inline:auto; }
+  .metodo__intro{ text-align:center; margin-inline:auto; }
+  .mentora__body{ text-align:center; }
+  .mentora__body > .mono{ display:block; }
+  .mentora__body .sec__h,.mentora__body > p{ margin-inline:auto; }
+  .mentora__stats{ justify-content:center; }
+  .mentora__stats div{ text-align:center; }
+  .mentora__foto{ margin-inline:auto; }
+  .faq__item p{ text-align:center; margin-inline:auto; }
+}
 
 /* ── FOOTER ───────────────────────────────────────── */
 .ft{ display:flex; justify-content:space-between; align-items:center; gap:1rem; padding-top:clamp(1.6rem,4vh,2.5rem); padding-bottom:clamp(1.6rem,4vh,2.5rem); background:var(--bg-1); color:var(--paper-0); }
 .ft .mono{ color:var(--paper-0); }
-@media (max-width:560px){ .ft{ flex-direction:column; align-items:flex-start; } }
+@media (max-width:560px){ .ft{ flex-direction:column; align-items:center; text-align:center; } }
