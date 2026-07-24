@@ -130,7 +130,7 @@
 .aplicacao__btn{ margin-top:clamp(1.2rem,3vh,2rem); padding:1.4em 3em; font-size:.92rem; letter-spacing:.2em;
   box-shadow:0 0 0 1px var(--accent), 0 14px 50px var(--accent-glow); }
 .aplicacao__btn:hover{ transform:translateY(-2px); box-shadow:0 0 0 1px var(--accent-d), 0 18px 60px var(--accent-glow); transition:transform .3s var(--ease), box-shadow .3s var(--ease); }
-.aplicacao__aviso{ color:var(--cream-2); margin:.6rem 0 0; }
+.aplicacao__aviso{ background:none; padding:0; color:var(--cream-2); margin:.6rem 0 0; }
 @media (max-width:640px){ .aplicacao__btn{ width:100%; max-width:24rem; justify-content:center; } }
 
 /* ── 6 · FAQ — claro, última seção ────────────────── */
